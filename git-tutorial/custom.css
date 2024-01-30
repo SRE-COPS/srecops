@@ -1,0 +1,80 @@
+/* Reset the margin to 0 for the entire page */
+body {
+    margin: 0;
+    background: linear-gradient(to bottom, #FFD700, #FFA500);
+    animation: colorChange 10s infinite alternate;
+}
+
+/* Container to hold content in the middle */
+.background {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom style for Bash code blocks */
+.sourceCode.bash {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    line-height: 2.0;
+}
+
+#git-tutorial {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.container {
+    display: flex;
+}
+
+.left-panel {
+    width: 200px;
+    background-color: #f28585;
+    float: left;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    text-align: center; /* Center-align text horizontally */
+    position: relative; /* Make the position relative for positioning children */
+
+}
+
+.left-text {
+    font-weight: bold; /* Make the text bold */
+    font-size: 92px; /* Adjust font size as needed */
+    position: absolute; /* Position the text absolutely within the left panel */
+    top: 50%; /* Position from the vertical center */
+    left: 50%; /* Position from the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text both horizontally and vertically */
+    margin: 0; /* Remove any default margin */
+}
+
+/* Main content styles */
+.main-content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+@keyframes colorChange {
+    0% {
+        background: linear-gradient(to bottom, #FFD700, #FFA500);
+    }
+    100% {
+        background: linear-gradient(to bottom, #FFA500, #FFD700);
+    }
+}
