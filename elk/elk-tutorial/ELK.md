@@ -63,8 +63,6 @@ Together, these different components are most commonly used for monitoring, trou
 
 ## Demo Environment:
 
-
-
 * Port forward Elasticsearch and Kibana on the master node.
    ```bash
     log-700
