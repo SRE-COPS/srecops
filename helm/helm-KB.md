@@ -22,10 +22,10 @@ https://chat.openai.com/c/9a062172-3e36-4d3c-bebc-6a7af278954d
     ```
 
 * Create Package
-       ```bash
-       helm package prom-chart/
+    ```bash
+    helm package prom-chart/
 
-        ```
+    ```
 * helm list
 
 
