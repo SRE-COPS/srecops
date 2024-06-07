@@ -1,0 +1,7 @@
+grafandep:
+  name: prometheus
+
+datasource:
+
+service:
+

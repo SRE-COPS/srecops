@@ -86,6 +86,40 @@ Together, these different components are most commonly used for monitoring, trou
 
 
 
+### Error log information
+    * Errors 
+    ```bash
+    #com.sap.nw.lm.aci.monitor.api.validation.RuntimeValidator
+    #BC-VCM-LVM
+
+    Command returned: Internal Error [OperationOSC
+
+    #2.0#2024 01 31 14:12:05:243#+0100#Error#com.sap.tc.vcm.engine.operation.handler.util.HostControlHandlerUtility#
+#BC-VCM-LVM#sap.com/tc~vcm~engine~app#C0000A60A106E4520000000100004F18#1717950201409470#sap.com/tc~vcm~monitor~app#com.sap.tc.vcm.engine.operation.handler.util.HostControlHandlerUtility.executeHostAgentOperation(SAPHostControlInterface, HostAgentOperation<T>, OperationContext, boolean)#Administrator#0##C670C53CB95E11EEB62CF7740A60A106#c670c53cb95e11eeb62cf7740a60a106##0#LaMa_VAL_RuCuVa_P82.vhhilp82db.fra3.hec.hilti.com#Plain##
+
+    ```
+    * To fetch all errors :
+        - event.original.keyword : *Error*
+        - message : *HostControlHandlerUtility*
+
+
+    ```bash
+
+    ```
+
+    Dashboard that contain information:
+        - HostControlHandlerUtility 
+         - message : *HostControlHandlerUtility*
+
+        - Authentication errors: 
+            - Could not find lvmadm_local
+
+        - monitor.api.validation.RuntimeValidator
+        - manager.CsDataFetcher
+     
+
+
+
 
 
 
